@@ -50,31 +50,3 @@ class Cactus(Plant):
 
 
 
-
-# Class Diagram
-![Diagram](<https://raw.githubusercontent.com/andreiiiizz/C-Users-LAB2_PC5-PROJECTS-CS121LABACT3CS1203Group8/master/Diagram.png>)
-
-# OOP Principles Demonstrated
-
-*Encapsulation*  
-The ```Plant``` class encapsulates attributes like ```name```, ```age```, ```height```, and ```health```, along with methods such as ```water()``` and ```get_status()``` to interact safely with the plant’s data.  
-Specific plant types like ```Fern```, ```Flower```, and ```AirPlant``` maintain internal state changes (e.g., ```growth``` or ```health```) through these methods, preventing direct access to sensitive attributes.
-
-
-*Abstraction*  
-The ```Plant``` class serves as a base abstraction defining essential behaviors like ```grow()``` or ```wilt()``` that are shared among all plant types.  
-Subclasses such as ```Fern```, ```Flower```, and ```AirPlant``` implement ```grow()``` differently, hiding complex internal logic while exposing a simple interface to users.
-
-
-*Inheritance*  
-All plant types inherit from the base ```Plant``` class, reusing core properties and behavior like ```name```, ```health```, and ```status tracking```.  
-Specialized behavior (e.g., ```grow()``` in ```AirPlant``` depending on air and water) extends and customizes the inherited methods.
-
-
-*Polymorphism*  
-The ```grow()``` method behaves differently depending on the plant type. A ```Fern``` grows gradually, a ```Flower``` might bloom, and an ```AirPlant``` flourishes in unique conditions—all via the same method call.  
-Other parts of the system (like a ```GardenManager``` or ```CareRoutine```) can treat all plant objects the same while letting each respond according to its type.
-
-
-# Acknowledgement  
-This laboratory activity would not have been possible without proper guidance. We sincerely thank *Ms. Fatima Agdon* for her support and assistance throughout the process—we truly hope to learn more from her in the future. We also extend our appreciation to each of our groupmates for the teamwork and effort in helping one another complete this project.
