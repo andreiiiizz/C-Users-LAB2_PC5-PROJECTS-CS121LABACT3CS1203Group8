@@ -1,0 +1,59 @@
+@startuml Garden_uml
+
+
+skinparam class {
+    BackgroundColor #
+    BorderColor Black
+}
+
+abstract class Plant #f7a8b8{
+    - name: str
+    - height: float
+    - age: float
+    - has_sunlight: bool
+    - has_water: bool
+    - health: int
+    - times_grown: int
+    + provide_sunlight(): void
+    + check_health(): void
+    + grow(): void
+    + photosynthesize(): void
+    + absorb_water(): void
+    + describe(): void
+}
+
+class Tree #b5ead7 {
+    + grow(): void
+    + photosynthesize(): void
+    + absorb_water(): void
+    + describe(): void
+}
+
+class Flower #fbd4d8 {
+    + grow(): void
+    + photosynthesize(): void
+    + absorb_water(): void
+    + describe(): void
+}
+
+class Cactus #c0f5f7 {
+    + grow(): void
+    + photosynthesize(): void
+    + absorb_water(): void
+    + describe(): void
+}
+
+class Fern #c8e6c9 {
+    + grow(): void
+    + photosynthesize(): void
+    + absorb_water(): void
+    + describe(): void
+    + fertilize(): void
+}
+
+Plant <|-- Tree
+Plant <|-- Flower
+Plant <|-- Cactus
+Plant <|-- Fern
+
+@enduml
