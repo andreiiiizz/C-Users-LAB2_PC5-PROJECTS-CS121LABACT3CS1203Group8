@@ -13,7 +13,7 @@ Develop a Python program that demonstrates the use of classes and core Object-Or
 # Members
 | Name | GitHub Profile |
 |------|----------------|
-|Aldred|[Aldred De Castro Laurenzedc](https://github.com/Laurenzedc)|
+|Aldred|[Laurenzedc](https://github.com/Laurenzedc)|
 |Jeily|[]()|
 |Marylein|[RyOrquinaza](https://github.com/Orquinaza)|
 |Kurt|[andreiiiizz](https://github.com/andreiiiizz)|
