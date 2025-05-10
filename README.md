@@ -39,7 +39,7 @@ A plant management simulation that allows users to create, monitor, and maintain
 
 Users can select from  **Tree, Flower, Cactus, and Fern** to manage, raise and nurture;
 
-🌳When the Towering **Tree** is Chosen🌳;
+‧₊˚🌳When the Towering **Tree** is Chosen🌳₊˚.;
 ```python
 class Tree(Plant):
 
@@ -69,7 +69,7 @@ class Tree(Plant):
     def describe(self):
         print(f"Tree: {self.name} | Height: {self.height} cm | Age: {self.age} years")
 ```
-❀When the Blooming **Flower** is Chosen❀;
+‧₊˚❀When the Blooming **Flower** is Chosen❀₊˚.;
 ```python
 
 class Flower(Plant):
@@ -101,7 +101,7 @@ class Flower(Plant):
         print(f"Flower: {self.name} | Height: {self.height} cm | Age: {self.age} years")
 
 ```
-🌵When the Prickly **Cactus** is Chosen🌵;
+‧₊˚🌵When the Prickly **Cactus** is Chosen🌵₊˚.;
 ```python
 
 class Cactus(Plant):
