@@ -1,7 +1,7 @@
-# CS 121 - ADVANCE COMPUTER PROGRAMMING
-This is our Labaratory Activity 3 in *CS 121*
+# 🌱 **CS 121 - ADVANCE COMPUTER PROGRAMMING**
+This is our Labaratory Activity 3 in **CS 121**
 
-**Category Assignment**
+🎯**Category Assignment**
 Develop a Python program that demonstrates the use of classes and core Object-Oriented Programming (OOP) principles.
 
 **Given Abstract Base Class:**
@@ -9,21 +9,39 @@ Develop a Python program that demonstrates the use of classes and core Object-Or
 
 
 
-# Members
+# 👩‍💻Members
 | Name | GitHub Profile |
 |------|----------------|
-|Aldred|[Laurenzedc](https://github.com/Laurenzedc)|
-|Jeily|[]()|
-|Marylein|[RyOrquinaza](https://github.com/Orquinaza)|
-|Kurt|[andreiiiizz](https://github.com/andreiiiizz)|
+|Aldred Laurenze C. De Castro|[Laurenzedc](https://github.com/Laurenzedc)|
+|Jeily Ann S. Merhan|[Jeilyyy](https://github.com/jeilyannnmerhan)|
+|Marylein L. Orquinaza|[RyOrquinaza](https://github.com/Orquinaza)|
+|Kurt Andrei C. Villena|[andreiiiizz](https://github.com/andreiiiizz)|
+
+
+# Program Overview
+Welcome to **Plantasy** — a botanical life simulator where users can grow, care for, and observe various types of plants with unique traits and behaviors.
+Harness the principles of Object-Oriented Programming to track growth, manage plant health, and unlock achievements through interaction with different plant species.
+
+**Features:**
+
+🌤️ _Environmental interaction_
+
+📈 _Growth and aging simulation_
+
+💖 _Health tracking and recovery_
+
+🏆 _Achievements based on plant milestones_
+
+📁 _Saving and Loading Features_
 
 # Code Description
 A plant management simulation that allows users to create, monitor, and maintain various plant types with features like growth tracking, health status, environmental effects, and data persistence.
 
-Users can choose among **Tree, Flower, Cactus, and Fern** to manage and maintain;
+Users can select from  **Tree, Flower, Cactus, and Fern** to manage, raise and nurture;
+
+🌳When the Towering **Tree** is Chosen🌳;
 ```python
 class Tree(Plant):
-    """A Tree plant that thrives with both water and sunlight."""
 
     def grow(self):
         if self.has_water and self.has_sunlight:
@@ -50,10 +68,11 @@ class Tree(Plant):
 
     def describe(self):
         print(f"Tree: {self.name} | Height: {self.height} cm | Age: {self.age} years")
-
+```
+❀When the Blooming **Flower** is Chosen❀;
+```python
 
 class Flower(Plant):
-    """A Flower that blossoms under proper care."""
 
     def grow(self):
         if self.has_water and self.has_sunlight:
@@ -81,9 +100,11 @@ class Flower(Plant):
     def describe(self):
         print(f"Flower: {self.name} | Height: {self.height} cm | Age: {self.age} years")
 
+```
+🌵When the Prickly **Cactus** is Chosen🌵;
+```python
 
 class Cactus(Plant):
-    """A resilient Cactus that survives in dry, sunny conditions."""
 
     def grow(self):
         if self.has_sunlight:
@@ -111,9 +132,10 @@ class Cactus(Plant):
     def describe(self):
         print(f"Cactus: {self.name} | Height: {self.height} cm | Age: {self.age} years")
 
-
+```
+°𓏲⋆🌿.When the Lush Green **Fern** is Chosen🌿.𓏲⋆°;
+```python
 class Fern(Plant):
-    """A Fern that enjoys shaded, moist environments."""
 
     def grow(self):
         if self.has_water and self.has_sunlight:
@@ -145,34 +167,31 @@ class Fern(Plant):
     def describe(self):
         print(f"Fern: {self.name} | Height: {self.height} cm | Age: {self.age} years")
 
-
-
-
-
+```
 # Class Diagram
 ![Diagram](<https://raw.githubusercontent.com/andreiiiizz/C-Users-LAB2_PC5-PROJECTS-CS121LABACT3CS1203Group8/master/Diagram.png>)
 
 # OOP Principles Demonstrated
-
-*Encapsulation*  
+**Encapsulation**  
 The ```Plant``` class encapsulates attributes like ```name```, ```age```, ```height```, and ```health```, along with methods such as ```water()``` and ```get_status()``` to interact safely with the plant’s data.  
-Specific plant types like ```Fern```, ```Flower```, and ```AirPlant``` maintain internal state changes (e.g., ```growth``` or ```health```) through these methods, preventing direct access to sensitive attributes.
+Specific plant types like ```Tree```, ```Fern```, ```Flower```, and ```Cactus``` maintain internal state changes (e.g., ```growth``` or ```health```) through these methods, preventing direct access to sensitive attributes.
 
 
-*Abstraction*  
-The ```Plant``` class serves as a base abstraction defining essential behaviors like ```grow()``` or ```wilt()``` that are shared among all plant types.  
-Subclasses such as ```Fern```, ```Flower```, and ```AirPlant``` implement ```grow()``` differently, hiding complex internal logic while exposing a simple interface to users.
+**Abstraction**
+The ```Plant``` class serves as a base abstraction defining essential behaviors like ```grow()``` or ```fertilize()``` that are shared among all plant types.  
+Subclasses such as ```Tree```, ```Fern```, ```Flower```, and ```Cactus``` implement ```grow()``` differently, hiding complex internal logic while exposing a simple interface to users.
 
 
-*Inheritance*  
+**Inheritance** 
 All plant types inherit from the base ```Plant``` class, reusing core properties and behavior like ```name```, ```health```, and ```status tracking```.  
-Specialized behavior (e.g., ```grow()``` in ```AirPlant``` depending on air and water) extends and customizes the inherited methods.
+Specialized behavior (e.g., ```grow()``` in ```Flower``` depending on weather and water) extends and customizes the inherited methods.
 
 
-*Polymorphism*  
-The ```grow()``` method behaves differently depending on the plant type. A ```Fern``` grows gradually, a ```Flower``` might bloom, and an ```AirPlant``` flourishes in unique conditions—all via the same method call.  
-Other parts of the system (like a ```GardenManager``` or ```CareRoutine```) can treat all plant objects the same while letting each respond according to its type.
-
+**Polymorphism**  
+The ```grow()``` method behaves differently depending on the plant type. A ```Tree``` might tower, a ```Fern``` grows gradually, a ```Flower``` might bloom, and an ```Cactus``` flourishes in unique conditions—all via the same method call.  
+Other parts of the system (like a ```Manage the Plants```) can treat all plant objects the same while letting each respond according to its type.
 
 # Acknowledgement  
-This laboratory activity would not have been possible without proper guidance. We sincerely thank *Ms. Fatima Agdon* for her support and assistance throughout the process—we truly hope to learn more from her in the future. We also extend our appreciation to each of our groupmates for the teamwork and effort in helping one another complete this project.
+This laboratory activity would not have been possible without proper guidance. We sincerely thank **Ms. Fatima Agdon** for her support and assistance throughout the process—we truly hope to learn more from her in the future. We also extend our appreciation to each of our groupmates for the teamwork and effort in helping one another complete this project.
+
+
