@@ -21,7 +21,7 @@ Develop a Python program that demonstrates the use of classes and core Object-Or
 # Code Description
 A plant management simulation that allows users to create, monitor, and maintain various plant types with features like growth tracking, health status, environmental effects, and data persistence.
 
-
+Users can choose among Tree, Flower, Cactus, and Fern to manage and maintain:
 
 
 
